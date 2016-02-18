@@ -32,6 +32,7 @@
           webViewController = [[WebViewController alloc] init];
           webViewController.delegate = self; // esto es para poder recibir el evento de que webView se cerro
           webViewController.startPage = url;
+          NSLog(@"showwebViewView async %@", url);
           [self.viewController presentViewController:webViewController animated:YES completion:nil];
       });
 
